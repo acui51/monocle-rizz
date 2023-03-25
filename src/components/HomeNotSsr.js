@@ -14,16 +14,16 @@ const HomeNotSsr = () => {
   const [connected, setConnected] = useState(false);
   const [hnArticleData, setHnArticleData] = useState(false); // type mixing
 
-  const { transcript } = useWhisper({
+  const { startRecording, stopRecording, transcript } = useWhisper({
     apiKey: process.env.NEXT_PUBLIC_OPENAI_API_TOKEN, // YOUR_OPEN_AI_TOKEN
     streaming: true,
-    timeSlice: 1_000, // 1 second
+    timeSlice: 1000, // 1 second
     whisperConfig: {
       language: "en",
       //   prompt: "You are the rizzler",
     },
     // removeSilence: true,
-    autoStart: true,
+    // autoStart: true,
   });
 
   console.log("transcript", transcript.text);
@@ -48,6 +48,10 @@ const HomeNotSsr = () => {
           <Button type="primary" onClick={() => ensureConnected(logger)}>
             Connect
           </Button>
+          <Button type="secondary" onClick={startRecording}>
+            Start recording
+          </Button>
+          <Button onClick={stopRecording}>Stop recording</Button>
         </div>
       </main>
     </>
