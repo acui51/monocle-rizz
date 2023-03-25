@@ -6,12 +6,27 @@ import { ensureConnected } from "@/utils/bluetooth/js/main";
 import { replRawMode, replSend } from "@/utils/bluetooth/js/repl";
 import { getHnTopArticleComments } from "@/utils/hacker-news/hn";
 import { Button } from "antd";
+import { useWhisper } from "@chengsokdara/use-whisper";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const HomeNotSsr = () => {
   const [connected, setConnected] = useState(false);
   const [hnArticleData, setHnArticleData] = useState(false); // type mixing
+
+  const { transcript } = useWhisper({
+    apiKey: process.env.NEXT_PUBLIC_OPENAI_API_TOKEN, // YOUR_OPEN_AI_TOKEN
+    streaming: true,
+    timeSlice: 1_000, // 1 second
+    whisperConfig: {
+      language: "en",
+      //   prompt: "You are the rizzler",
+    },
+    // removeSilence: true,
+    autoStart: true,
+  });
+
+  console.log("transcript", transcript.text);
 
   useEffect(() => {
     if (Object.keys(hnArticleData).length) {
@@ -40,6 +55,7 @@ const HomeNotSsr = () => {
 
   async function getHn() {
     const hnData = await getHnTopArticleComments();
+    console.log("hnData", hnData);
     setHnArticleData(hnData);
   }
 

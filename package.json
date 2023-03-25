@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chengsokdara/use-whisper": "^0.2.0",
     "@octokit/request": "^6.2.3",
     "antd": "^5.3.2",
     "autoprefixer": "^10.4.14",
