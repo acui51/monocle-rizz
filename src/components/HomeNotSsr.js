@@ -15,7 +15,7 @@ const HomeNotSsr = () => {
   const [hnArticleData, setHnArticleData] = useState(false); // type mixing
 
   const { startRecording, stopRecording, transcript } = useWhisper({
-    apiKey: process.env.NEXT_PUBLIC_OPENAI_API_TOKEN, // YOUR_OPEN_AI_TOKEN
+    apiKey: process.env.NEXT_PUBLIC_OPENAI_API_TOKEN,
     streaming: true,
     timeSlice: 1000, // 1 second
     whisperConfig: {
@@ -26,7 +26,10 @@ const HomeNotSsr = () => {
     // autoStart: true,
   });
 
-  console.log("transcript", transcript.text);
+  useEffect(() => {
+    // text is changing
+    console.log("text is changing");
+  }, [transcript.text]);
 
   useEffect(() => {
     if (Object.keys(hnArticleData).length) {
@@ -48,9 +51,7 @@ const HomeNotSsr = () => {
           <Button type="primary" onClick={() => ensureConnected(logger)}>
             Connect
           </Button>
-          <Button type="secondary" onClick={startRecording}>
-            Start recording
-          </Button>
+          <Button onClick={startRecording}>Start recording</Button>
           <Button onClick={stopRecording}>Stop recording</Button>
         </div>
       </main>
