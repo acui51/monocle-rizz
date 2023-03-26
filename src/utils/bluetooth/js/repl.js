@@ -1,6 +1,5 @@
 import { isConnected, replDataTxQueue } from './bluetooth.js';
 import { ensureConnected } from './main.js';
-import { relay } from "./relay.js";
 
 let cursorPosition = 0;
 let replRawModeEnabled = false;
