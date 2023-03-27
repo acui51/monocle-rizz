@@ -3,7 +3,9 @@
 A hack built at the AGI House GPT Hackathon that gives real-time Charisma as a service (CaaS), and tells you exactly what to say.
 
 Demo: https://twitter.com/bryanhpchiang/status/1639830383616487426?s=20
-https://user-images.githubusercontent.com/62365251/228070610-04f77992-df8e-49a0-b861-1eca8b3981b5.mp4
+
+https://user-images.githubusercontent.com/62365251/228071053-cf443fb4-f194-4bda-a315-d618fb8344ba.mp4
+
 
 Built with @bryanhpchiang, @4gatepylon, and @varunshenoy and using Next.js, Open AI, and Brilliant Monocle 
 
