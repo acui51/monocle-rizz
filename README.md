@@ -7,7 +7,7 @@ Demo: https://twitter.com/bryanhpchiang/status/1639830383616487426?s=20
 https://user-images.githubusercontent.com/62365251/228071053-cf443fb4-f194-4bda-a315-d618fb8344ba.mp4
 
 
-Built with @bryanhpchiang, @4gatepylon, and @varunshenoy and using Next.js, Open AI, and Brilliant Monocle 
+Built with @[bryanhpchiang](https://twitter.com/bryanhpchiang), @[Adriano34554795](https://twitter.com/Adriano34554795), and @[varunshenoy_](https://twitter.com/varunshenoy_) and using Next.js, Open AI, and Brilliant Monocle 
 
 ## Setup
 Copy the `.env.example` file into `.env.local` at the root level and paste in your Open AI key. ***WARNING*** this is a NEXT_PUBLIC key so it will be exposed to the browser. Read more here: https://nextjs.org/docs/basic-features/environment-variables. 
