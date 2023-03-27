@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/62365251/228071053-cf443fb4-f194-4bda-
 Built with @[bryanhpchiang](https://twitter.com/bryanhpchiang), @[Adriano34554795](https://twitter.com/Adriano34554795), and @[varunshenoy_](https://twitter.com/varunshenoy_) and using Next.js, Open AI, and [Brilliant Monocle](https://www.brilliantmonocle.com/)
 
 ## Setup
-Copy the `.env.example` file into `.env.local` at the root level and paste in your Open AI key. ***WARNING*** this is a NEXT_PUBLIC key so it will be exposed to the browser. Read more here: https://nextjs.org/docs/basic-features/environment-variables. 
+Copy the `.env.example` file into `.env.local` at the root level and paste in your Open AI key. ***WARNING*** this is a `NEXT_PUBLIC` key so it will be exposed to the browser. Read more here: https://nextjs.org/docs/basic-features/environment-variables. 
 
 Run `yarn install` to install deps.
 
