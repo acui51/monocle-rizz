@@ -1,7 +1,7 @@
 import "antd/dist/reset.css";
 import dynamic from "next/dynamic";
 
-const HomeNotSsr = dynamic(() => import("../components/HomeNotSsr"), {
+const HomeNotSsr = dynamic(() => import("../components/Home"), {
   ssr: false,
 });
 
