@@ -4,9 +4,15 @@ A hack built at the AGI House GPT Hackathon that gives real-time Charisma as a s
 
 Demo: https://twitter.com/bryanhpchiang/status/1639830383616487426?s=20
 
-Built with @bryanhpchiang, @4gatepylon, and @varunshenoy
+Built with @bryanhpchiang, @4gatepylon, and @varunshenoy and using Next.js, Open AI, and Brilliant Monocle 
+
+## Setup
+Copy the `.env.example` file into `.env.local` at the root level and paste in your Open AI key. ***WARNING*** this is a NEXT_PUBLIC key so it will be exposed to the browser. Read more here: https://nextjs.org/docs/basic-features/environment-variables. 
+
+Run `yarn install` to install deps.
+
+Run `yarn dev` to start the app.
 
 ## Acknowledgements
 
-Thanks to this repo for guiding us in setting up the Bluetooth connection with the Monocle and how to send instructions to control it
-https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbHB4cldfb29ZdkVVZ0lveEhyZl9tblpraUFpZ3xBQ3Jtc0trUFRZb2FBQjRKenhRYTVjNmYyR3MzdDBkZjREclRFaHY4Z2FxelM5NnFuN1RzZEFuTm8xcms5WXJzVE5FQmVKcnBFOUdFb0NXZ2pHaXVFUXMzampRQjE0dlR3LUNDRmFRM2g2aFFidktFT2hZeGpnRQ&q=https%3A%2F%2Fgithub.com%2Fjdc-cunningham%2Fbl-monocle-reactjs-pwa%2Ftree%2Fworkout-app&v=T8Ojr39Myuw
+Thanks to this repo for guiding us in setting up the Bluetooth connection with the Monocle and how to send instructions to control it: https://github.com/jdc-cunningham/bl-monocle-reactjs-pwa/tree/workout-app
