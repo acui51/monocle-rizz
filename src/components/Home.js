@@ -85,6 +85,12 @@ const Home = () => {
           >
             Connect
           </Button>
+          <div className="flex items-center mt-5 gap-2">
+            <Button onClick={onRecord}>
+              {isRecording ? "Stop recording" : "Start recording"}
+            </Button>
+            <Button onClick={fetchGpt}>Get response</Button>
+          </div>
         </div>
       </main>
     </>
@@ -96,12 +102,12 @@ const Home = () => {
     }
     if (msg.trim() === "trigger b") {
       // Left btn
-      fetchGpt();
+      // fetchGpt();
     }
 
     if (msg.trim() === "trigger a") {
       // Right btn
-      onRecord();
+      // onRecord();
     }
   }
 
